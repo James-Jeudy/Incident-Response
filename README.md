@@ -68,10 +68,6 @@ As seen below, we ran some queries to determine if this incident is a true posit
 
 The second query gathers successful logins (Event ID: 4624) with the attack IP of: 24.46.222.79 from James-Jeudy Laptop. Alerts are accurate as it was raised by successful logins from this workstation using the lab-user username. This is the local username of our Windows-VM machine. We determined that this is a true positive and we are lucky as no damage occured with the malicious actor being logged into the machine as this is a honeynet environment designed to attract attackers:
 
-
-
-![Copy the query](https://github.com/James-Jeudy/Incident-Response/assets/160562010/7b0e94ae-8ff8-47a0-999c-f54c098bedc8)
-
 ![Query in log analytics workspace](https://github.com/James-Jeudy/Incident-Response/assets/160562010/a7bdd65a-e4cc-40ad-8a9f-9f3f3343602f)
 
 ![As noted there was custom brute force logins with account on machine](https://github.com/James-Jeudy/Incident-Response/assets/160562010/3d976e3e-5580-4c6e-a9b9-6a1498047a0c)

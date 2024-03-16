@@ -46,7 +46,7 @@ I set the severity to High as it was a successful brute force attempt into my Wi
 
 <h3> 4. Observe Entities and Incident Timelines<h3></h3>
 
-We found it very strange that there were five alerts for the successful brute force attempts as you should only need one successful attempt to access the machine: 
+We found it very strange that there were five alerts for the successful brute force attempts as you should only need one successful attempt to access the machine. The Windows-VM is the machine that was accessed by malicious actors, and 24.46.222.79 is the source IP address of the attacker. According to this info below, the attacker is located in Brooklyn, New York:
 
 <br>
 
@@ -58,10 +58,6 @@ We found it very strange that there were five alerts for the successful brute fo
 
 <br>
 
-The Windows-VM is the machine that was accessed by malicious actors, and 24.46.222.79 is the source IP address of the attacker. According to this info, the attacker is located in Brooklyn, New York:
-
-
-<br>
 ![Entities for incident person place or thing](https://github.com/James-Jeudy/Incident-Response/assets/160562010/091d9f00-8d08-4084-9380-0a77aac0856c)
 
 ![Location of Attacker- further details](https://github.com/James-Jeudy/Incident-Response/assets/160562010/1a24c491-d531-46f3-be28-147ebaeeabb2)

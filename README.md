@@ -97,7 +97,7 @@ In this project, I used the Computer Security Incident Handling Guide(NIST 800-6
 
 ## Step 4: Document Findings/Info and Clouse out the Incident in Sentinel
 
-After gathering up all of the findings, we closed the ticket as a benign positive. This was suspicious but expected obviously, as this is a Honeynet environment designed to attract malicious attackers.  
+<h3> After gathering up all of the findings, we closed the ticket as a benign positive. This was suspicious but expected obviously, as this is a Honeynet environment designed to attract malicious attackers.  
 
 ![Click apply and then close incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/433a7467-c4fa-4e18-86b5-84ee8455ee35)
 

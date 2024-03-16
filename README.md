@@ -142,7 +142,7 @@ To fully remediate the issue, we locked down our Network Security Group for our 
 
 <br>
 
-## Step 4: Document Findings/Info and Clouse out the Incident in Sentinel
+## Step 4: Document Findings/Info and Close out the Incident in Sentinel
 
 After gathering up all of the findings, we closed the ticket as a benign positive. The incident was suspicious but expected, as this is a Honeynet environment designed to attract malicious attackers.
 

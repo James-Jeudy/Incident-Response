@@ -53,7 +53,7 @@ I set the severity to High as it was a successful brute force attempt into my Wi
 
 <h3> 4. Observe Entities and Incident Timelines<h3></h3>
 
-We found it very strange that there were five alerts for the successful brute force attempts as you should only need one successful attempt to access the machine. The Windows-VM is the machine that was accessed by malicious actors, and 24.46.222.79 is the source IP address of the attacker. According to this info below, the attacker is located in Brooklyn, New York:
+We found it very strange that there were five alerts for the successful brute force attempts as you should only need one successful attempt to access the machine. The Windows-VM is the machine that was accessed by malicious actors, and 24.46.222.79 is the IP address of the attacker. According to this info below, the attacker is located in Brooklyn, New York:
 
 <br>
 

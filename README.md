@@ -48,7 +48,7 @@ The Windows-VM is the machine that was accessed by malicious actors, and 24.46.2
 
 ![Investigate incident screen](https://github.com/James-Jeudy/Incident-Response/assets/160562010/557d53b1-05c7-4e2c-a2b8-f9f99aadf284)
 
-<h3>6. Inspect the entities and see if there are any related events<h3>
+<h3>6. Inspect the entities and see if there are any related events<h3></h3>
 
 The IP Address 24.46.222.79 is also involved in five other brute force attempts, 11 brute force successes, 35 privilege escalations, etc. Potentially comprimised system "Windows-VM" is also involved in several other incidents/alerts. We suspect there is possible overexposure to the Public Internet.
 

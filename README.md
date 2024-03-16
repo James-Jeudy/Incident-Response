@@ -127,6 +127,12 @@ To fully remediate the issue, we also locked down our Network Security Group for
 
         
 ![Reset password for lab-user](https://github.com/James-Jeudy/Incident-Response/assets/160562010/9ba7b46b-d4fd-402b-9849-698f9822bc3e)
+
+<br>
+
+<br>
+
+
 ![Rules for Windows VM-NSG's](https://github.com/James-Jeudy/Incident-Response/assets/160562010/6209f9f3-d70a-4de0-9238-51ffe9784821)
 
 

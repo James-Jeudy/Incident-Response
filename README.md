@@ -35,14 +35,21 @@ I set the severity to High as it was a successful brute force attempt into my Wi
 
 ![Set the owner status   severity for incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/d6a28555-52fc-4fff-a717-8170c46beeac)
 
+<br> 
+
 <h3>2. View Full Details<h3></h3>
 
 ![View full details of the incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/6b74c7a6-6165-4b94-af83-f459d2ff983d)
+
+
+<br>
+
 
  <h3> 3. Observe the Activity Log (for history of incident):<h3></h3>
 
 ![Incident Activity Log](https://github.com/James-Jeudy/Incident-Response/assets/160562010/7b3eae0a-c9d2-4e13-922a-df3b47220eb9)
 
+<br>
 
 <h3> 4. Observe Entities and Incident Timelines<h3></h3>
 
@@ -60,7 +67,16 @@ We found it very strange that there were five alerts for the successful brute fo
 
 ![Entities for incident person place or thing](https://github.com/James-Jeudy/Incident-Response/assets/160562010/091d9f00-8d08-4084-9380-0a77aac0856c)
 
+<br> 
+
+<br>
+
+
 ![Location of Attacker- further details](https://github.com/James-Jeudy/Incident-Response/assets/160562010/1a24c491-d531-46f3-be28-147ebaeeabb2)
+
+<br>
+
+<br>
 
 <h3>5. “Investigate” the incident and continue trying to determine the scope<h3></h3>
 

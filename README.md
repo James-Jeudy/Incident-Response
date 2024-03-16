@@ -122,7 +122,7 @@ The second query gathers successful logins (Event ID: 4624) with the Attack IP A
 
 ![Brute force success from laptop](https://github.com/James-Jeudy/Incident-Response/assets/160562010/88bae0d4-83ad-4c71-86a5-5a05d69fec4d)
 
-## Step 3: Containment, Eradication, & Recovery:
+## Step 3: Containment, Eradication, & Recovery
 
 Since we already turned off the machine as our first step in the incident to prevent any further malicious activity, the next step for containment is to reset the password of our lab-user account, which is our local user account on the Windows VM machine. 
 
@@ -150,7 +150,7 @@ After gathering up all of the findings, we closed the ticket as a benign positiv
 
 <br>
 
-## Step 5: Conclusion:
+## Step 5: Conclusion
 
 In conclusion, this attack was determined to be a true positive because a malicious attacker was able to access our Windows VM. Because this was a honeynet environment, no important data was lost, as this environment is meant to attract threat actors from the Internet.
 

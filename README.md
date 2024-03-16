@@ -121,7 +121,9 @@ The second query gathers successful logins (Event ID: 4624) with the attack IP o
 
 ## Step 3: Containment, Eradication, & Recovery:
 
-Since we already turned off the machine as our first step in the incident to prevent any further malicious activity, the next step for containment is to reset the password of our labuser account which is our local user account on the Windows-VM machine. To fully remediate the issue, we also locked down our Network Security Group for our Windows VM to just my IP address. Since the rule is setup to only allow my IP address, malicious actors won't be allowed in. It won't match any of the other rules listed here except the Denyallinbound rule which means every IP address besides my own will be denied. The firewall on the Windows-VM was also enabled. 
+Since we already turned off the machine as our first step in the incident to prevent any further malicious activity, the next step for containment is to reset the password of our labuser account which is our local user account on the Windows-VM machine. 
+
+To fully remediate the issue, we also locked down our Network Security Group for our Windows VM to just my IP address. Since the rule is setup to only allow my IP address, malicious actors won't be allowed in. It won't match any of the other rules listed here except the Denyallinbound rule which means every IP address besides my own will be denied. The firewall on the Windows-VM was also enabled. 
 
         
 ![Reset password for lab-user](https://github.com/James-Jeudy/Incident-Response/assets/160562010/9ba7b46b-d4fd-402b-9849-698f9822bc3e)

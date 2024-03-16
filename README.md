@@ -154,6 +154,6 @@ After gathering up all of the findings, we closed the ticket as a benign positiv
 
 In conclusion, this attack was determined to be a true positive because a malicious attacker was able to access our Windows VM. Because this was a honeynet environment, no important data was lost, as this environment is meant to attract threat actors from the Internet.
 
-We would resolve the issue by turning off the Windows Virtual Machine, resetting the user account's password on the machine, and, last but definitely most importantly, hardening the network security group for the Windows VM and enabling the firewall on the local machine. Hardening the network security groups will help prevent cybercriminals from accessing the Windows VM.  
+We would resolve the issue by turning off the Windows Virtual Machine, resetting the user account's password on the machine, and, last but most importantly, hardening the network security group for the Windows VM and enabling the firewall on the local machine. Hardening the network security groups will help prevent cybercriminals from accessing the Windows VM.  
 
 Overall, this was a great project as I gained experience using the NIST 800-61 framework to solve incidents, a significant part of Security Operations. It has helped me obtain a more well-rounded troubleshooting mindset regarding security incidents, as the NIST 800-61 framework is generally the centerpiece whenever we need to solve incidents in this field. 

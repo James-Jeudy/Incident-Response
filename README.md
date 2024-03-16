@@ -95,7 +95,9 @@ We found it very strange that there were five alerts for the successful brute fo
 
 <h3>6. Inspect the entities and see if there are any related events<h3></h3>
 
-The IP Address 24.46.222.79 is also involved in five other brute force attempts, 11 brute force successes, 35 privilege escalations, etc. Potentially comprimised system "Windows-VM" is also involved in several other incidents/alerts. We suspect there is possible overexposure to the Public Internet.
+The IP Address 24.46.222.79 is also involved in five other brute force attempts, 11 brute force successes, 35 privilege escalations, etc. 
+
+Potentially comprimised system "Windows-VM" is also involved in several other incidents/alerts. We suspect there is possible overexposure to the Public Internet.
 
 ![Right click attacker IP to get related alerts to see if there is any other malicious activity](https://github.com/James-Jeudy/Incident-Response/assets/160562010/18ec758c-6a56-4362-9471-91c40c40e55d)
 

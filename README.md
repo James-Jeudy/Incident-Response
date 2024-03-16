@@ -29,7 +29,7 @@ We turned off the VM immediately after being notified of the incident to prevent
 
 <h3>1. Set Severity, Status, & Owner<h3></h3>
 
-I set the severity to High as it was a successful brute force attempt into my Windows VM. I set the status to active as I was currently working on the ticket and the owner as Myself:
+I set the severity to High as it was a successful brute-force attempt into my Windows VM. I put the status as active as I was currently working on the ticket and the owner as Myself:
 
 <br>
 
@@ -53,7 +53,7 @@ I set the severity to High as it was a successful brute force attempt into my Wi
 
 <h3> 4. Observe Entities and Incident Timelines<h3></h3>
 
-We found it very strange that there were five alerts for the successful brute force attempts as you should only need one successful attempt to access the machine. The Windows-VM is the machine that was accessed by malicious actors, and 24.46.222.79 is the IP address of the attacker. According to this info below, the attacker is located in Brooklyn, New York:
+We found it very strange that there were five alerts for the successful brute force attempts, as you should only need one successful attempt to access the machine. The Windows VM is the machine that malicious actors access and 24.46.222.79 is the IP address of the attacker. According to the info below, the attacker's location is in Brooklyn, New York:
 
 <br>
 
@@ -95,9 +95,9 @@ We found it very strange that there were five alerts for the successful brute fo
 
 <h3>6. Inspect the entities and see if there are any related events<h3></h3>
 
-The IP Address 24.46.222.79 is also involved in five other brute force attempts, 11 brute force successes, 35 privilege escalations, etc. 
+The IP Address 24.46.222.79 is also involved in five other brute-force attempts, 11 brute-force successes, 35 privilege escalations, etc. 
 
-Potentially comprimised system "Windows-VM" is also involved in several other incidents/alerts. We suspect there is possible overexposure to the Public Internet.
+The potentially compromised system "Windows-VM" is also involved in several other incidents/alerts. We suspect possible overexposure to the Public Internet.
 
 ![Right click attacker IP to get related alerts to see if there is any other malicious activity](https://github.com/James-Jeudy/Incident-Response/assets/160562010/18ec758c-6a56-4362-9471-91c40c40e55d)
 
@@ -111,9 +111,9 @@ Potentially comprimised system "Windows-VM" is also involved in several other in
 
 
 
-As seen below, we ran some queries to determine if this incident is a true positive. The first query gathers failed logins within a one hour time period and some successful logins as well, and whenever someone has failed five or more times but also had a successful login in the same time period, we assume that it was an successful  brute force attempt. 
+We ran some queries below to determine if this incident is a true positive. The first query gathers failed logins within a one-hour time period and some successful logins as well. Whenever someone failed five or more times but also had a successful login in the same period, we assume it was a successful brute-force attempt. 
 
-The second query gathers successful logins (Event ID: 4624) with the Attack IP Address of: 24.46.222.79 from James-Jeudy Laptop. Alerts are accurate as it was raised by successful logins from this workstation using the lab-user username. This is the local username of our Windows-VM machine. We determined that this is a true positive and we are lucky as no damage occured with the malicious actor being logged into the machine as this is a honeynet environment designed to attract attackers:
+The second query gathers successful logins (Event ID: 4624) with the Attack IP Address of 24.46.222.79 from James-Jeudy Laptop. Alerts are accurate as they were raised by successful logins from this workstation using the lab-user username. Lab-User is the local username of our Windows VM machine. We determined that this is a true positive, and we are lucky as no damage occurred with the malicious actor logging into the machine as this is a honeynet environment designed to attract attackers:
 
 ![Query in log analytics workspace](https://github.com/James-Jeudy/Incident-Response/assets/160562010/a7bdd65a-e4cc-40ad-8a9f-9f3f3343602f)
 
@@ -123,9 +123,9 @@ The second query gathers successful logins (Event ID: 4624) with the Attack IP A
 
 ## Step 3: Containment, Eradication, & Recovery:
 
-Since we already turned off the machine as our first step in the incident to prevent any further malicious activity, the next step for containment is to reset the password of our labuser account which is our local user account on the Windows-VM machine. 
+Since we already turned off the machine as our first step in the incident to prevent any further malicious activity, the next step for containment is to reset the password of our lab-user account, which is our local user account on the Windows VM machine. 
 
-To fully remediate the issue, we also locked down our Network Security Group for our Windows VM to just my IP address. Since the rule is setup to only allow my IP address, malicious actors won't be allowed in. It won't match any of the other rules listed here except the Denyallinbound rule which means every IP address besides my own will be denied. The firewall on the Windows-VM was also enabled. 
+To fully remediate the issue, we locked down our Network Security Group for our Windows VM to just my IP address. Since the rule only allows my IP address, malicious actors won't be allowed in. It will match the other rules listed here except the Denyallinbound rule, which means that this rule will deny every IP address besides my own. The firewall on the Windows VM was also enabled. 
 
         
 ![Reset password for lab-user](https://github.com/James-Jeudy/Incident-Response/assets/160562010/9ba7b46b-d4fd-402b-9849-698f9822bc3e)
@@ -143,7 +143,7 @@ To fully remediate the issue, we also locked down our Network Security Group for
 
 ## Step 4: Document Findings/Info and Clouse out the Incident in Sentinel
 
-After gathering up all of the findings, we closed the ticket as a benign positive. This was suspicious but expected obviously, as this is a Honeynet environment designed to attract malicious attackers.  
+After gathering up all of the findings, we closed the ticket as a benign positive. The incident was suspicious but expected, as this is a Honeynet environment designed to attract malicious attackers.
 
 ![Click apply and then close incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/433a7467-c4fa-4e18-86b5-84ee8455ee35)
 
@@ -151,10 +151,8 @@ After gathering up all of the findings, we closed the ticket as a benign positiv
 
 ## Step 5: Conclusion:
 
-In conclusion, this attack was determined as a true positive, due to a malicious attacker being able to access our Windows-VM. Due to this being a honeynet environment, no important data was lost as this environment is meant to attract threat actors from the internet.
+In conclusion, this attack was determined to be a true positive because a malicious attacker was able to access our Windows VM. Because this was a honeynet environment, no important data was lost, as this environment is meant to attract threat actors from the Internet.
 
-We would resolve the issue in the end by turning off the Windows Virtual Machine, resetting the password of the user account on the machine, & last but definitely most important, hardening the network security group for the Windows-VM and enabling the firewall on the local machine. 
+We would resolve the issue by turning off the Windows Virtual Machine, resetting the user account's password on the machine, and, last but definitely most importantly, hardening the network security group for the Windows VM and enabling the firewall on the local machine. Hardening the network security groups will help prevent cybercriminals from accessing the Windows VM.  
 
-Overall, this was a great project as I was able to gain some experience in using the NIST 800-61 framework to solve incidents, which is a significant part of Security Operations. It has helped me obtain a more well rounded troubleshooting mindset when it comes to security incidents, as the NIST 800-61 framework is generally the centerpiece whenever we need to solve incidents in this field. 
-
-
+Overall, this was a great project as I gained experience using the NIST 800-61 framework to solve incidents, a significant part of Security Operations. It has helped me obtain a more well-rounded troubleshooting mindset regarding security incidents, as the NIST 800-61 framework is generally the centerpiece whenever we need to solve incidents in this field. 

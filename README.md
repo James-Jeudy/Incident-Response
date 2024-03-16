@@ -43,8 +43,6 @@ In this project, I used the Computer Security Incident Handling Guide(NIST 800-6
 
 ![Location of Attacker- further details](https://github.com/James-Jeudy/Incident-Response/assets/160562010/1a24c491-d531-46f3-be28-147ebaeeabb2)
 
-![Attacker IP located in Brooklyn](https://github.com/James-Jeudy/Incident-Response/assets/160562010/31f2b132-ccef-4a1d-bcf3-2c302c52faed)
-
 <h3> 5. “Investigate” the incident and continue trying to determine the scope
 
 ![Investigate the incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/07beacc7-296a-4537-aeeb-6017c27fabdc)

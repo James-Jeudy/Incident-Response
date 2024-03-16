@@ -18,6 +18,8 @@ We turned off the VM immediately after seeing the alert to prevent any further m
 
 ## 1. Set Severity, Status, & Owner
 
+I set the severity to High as it was a successful brute force attempt into my Windows V. I set the status to active as I was currently working on the ticket and the owner as Myself. 
+
 ![Set the owner status   severity for incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/d6a28555-52fc-4fff-a717-8170c46beeac)
 
 ## 2. View Full Details

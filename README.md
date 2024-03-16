@@ -92,3 +92,7 @@ After gathering up all of the findings, we closed the ticket as a benign positiv
 
 ## Conclusion:
 
+In conclusion, this attack was determined as a true positive as a malicious attacker had a successful brute force attempt into our Windows-VM. Due to this being a honeynet environment, no important data was lost as this environment is meant to attract attackers.
+
+
+

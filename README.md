@@ -145,6 +145,9 @@ After gathering up all of the findings, we closed the ticket as a benign positiv
 
 ![Click apply and then close incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/433a7467-c4fa-4e18-86b5-84ee8455ee35)
 
+<br>
+
+<br>
 
 ## Conclusion:
 

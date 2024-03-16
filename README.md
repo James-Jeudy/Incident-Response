@@ -8,7 +8,7 @@ In this project, I used the Computer Security Incident Handling Guide(NIST 800-6
 <br>
 
 
-## Step 1: Preparation:
+## Step 1: Preparation
 This was initiated by ingesting all the logs into Log Analytics Workspace and Microsoft Sentinel and configuring alert rules in my SOC/Honeynet project.
 
 We turned off the VM immediately after being notified of the incident to prevent any further malicious activity: <br>

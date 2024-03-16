@@ -65,7 +65,9 @@ In this project, I used the Computer Security Incident Handling Guide(NIST 800-6
 
 <h3>
 
-<h3> As seen below, we ran some queries to determine if this incident is a true positive. The first query gathers failed logins within a one hour time period and some successful logins as well, and whenever someone has failed five or more times but also had a successful login in the same time period, we assume that it was an successful  brute force attempt. The second query gathers successful logins (Event ID: 4624) with the attack IP of: 24.46.222.79 from James-Jeudy Laptop. Alerts are accurate as it was raised by successful logins from this workstation using the lab-user username. This is the local username of our Windows-VM machine. We determined that this is a true positive and we are lucky as no damage occured with the malicious actor being logged into the machine as this is a honeynet environment designed to attract attackers:
+<h3> As seen below, we ran some queries to determine if this incident is a true positive. The first query gathers failed logins within a one hour time period and some successful logins as well, and whenever someone has failed five or more times but also had a successful login in the same time period, we assume that it was an successful  brute force attempt. 
+
+<h3> The second query gathers successful logins (Event ID: 4624) with the attack IP of: 24.46.222.79 from James-Jeudy Laptop. Alerts are accurate as it was raised by successful logins from this workstation using the lab-user username. This is the local username of our Windows-VM machine. We determined that this is a true positive and we are lucky as no damage occured with the malicious actor being logged into the machine as this is a honeynet environment designed to attract attackers:
 
 
 

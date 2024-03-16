@@ -84,3 +84,23 @@ In this project, I used the Computer Security Incident Handling Guide(NIST 800-6
 
 ## Step 3: Containment, Eradication, & Recovery:
 
+<h3> Since we already turned off the machine as our first step in the incident to prevent any further malicious activity, the next step for containment is to reset the password of our labuser account which is our local user account on the Windows-VM machine.
+
+        
+![Reset password for lab-user](https://github.com/James-Jeudy/Incident-Response/assets/160562010/9ba7b46b-d4fd-402b-9849-698f9822bc3e)
+
+<h3> To fully remediate the issue, we locked down our Network Security Group for our Windows VM to just my IP address. Since the rule is setup to only allow my IP address, malicious actors won't be allowed in. It won't match any of the other rules listed here except the Denyallinbound rule which means every IP address besides my own will be denied. The firewall on my Windows-VM was also enabled. 
+
+
+![Rules for Windows VM-NSG's](https://github.com/James-Jeudy/Incident-Response/assets/160562010/6209f9f3-d70a-4de0-9238-51ffe9784821)
+
+
+## Step 4: Document Findings/Info and Clouse out the Incident in Sentinel
+
+After gathering up all of the findings, we closed the ticket as a benign positive. This was suspicious but expected obviously, as this is a Honeynet environment designed to attract malicious attackers.  
+
+![Click apply and then close incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/433a7467-c4fa-4e18-86b5-84ee8455ee35)
+
+
+## Conclusion:
+

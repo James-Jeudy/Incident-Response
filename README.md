@@ -28,8 +28,6 @@ In this project, I used the Computer Security Incident Handling Guide(NIST 800-6
 
 <h3> 3. Observe the Activity Log (for history of incident):
 
-![View the activity log](https://github.com/James-Jeudy/Incident-Response/assets/160562010/6510966a-bf70-4e6e-b3df-444a7c4481f1)
-
 ![Incident Activity Log](https://github.com/James-Jeudy/Incident-Response/assets/160562010/7b3eae0a-c9d2-4e13-922a-df3b47220eb9)
 
 

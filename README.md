@@ -70,9 +70,6 @@ The second query gathers successful logins (Event ID: 4624) with the attack IP o
 
 
 
-
-![Take a look at the analytics rule](https://github.com/James-Jeudy/Incident-Response/assets/160562010/3667e850-3b10-4669-9734-12a52913ab79)
-
 ![Copy the query](https://github.com/James-Jeudy/Incident-Response/assets/160562010/7b0e94ae-8ff8-47a0-999c-f54c098bedc8)
 
 ![Query in log analytics workspace](https://github.com/James-Jeudy/Incident-Response/assets/160562010/a7bdd65a-e4cc-40ad-8a9f-9f3f3343602f)

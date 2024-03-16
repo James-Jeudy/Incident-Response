@@ -10,14 +10,28 @@ In this project, I used the Computer Security Incident Handling Guide(NIST 800-6
 ## Step 1: Preparation:
 This was initiated already by ingesting all of the logs into Log Analytics Workspace and Microsoft Sentinel and configuring alert rules in my SOC/Honeynet project. 
 
-We turned off the VM immediately after being notified of the incident to prevent any further malicious activity.
+We turned off the VM immediately after being notified of the incident to prevent any further malicious activity: <br>
 
-![Immediately stop the VM](https://github.com/James-Jeudy/Incident-Response/assets/160562010/a7b25b6e-a034-4e93-ba05-5f2b4dc6fd3e)
+<br>
+
+<br>
+
+
+![Immediately stop the VM](https://github.com/James-Jeudy/Incident-Response/assets/160562010/a7b25b6e-a034-4e93-ba05-5f2b4dc6fd3e) <br>
+
+<br>
+
+<br>
+
+<br> 
 
 ## Step 2: Detection & Analysis
+
 <h3>1. Set Severity, Status, & Owner<h3></h3>
 
 I set the severity to High as it was a successful brute force attempt into my Windows VM. I set the status to active as I was currently working on the ticket and the owner as Myself:
+
+<br>
 
 ![Set the owner status   severity for incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/d6a28555-52fc-4fff-a717-8170c46beeac)
 
@@ -34,10 +48,20 @@ I set the severity to High as it was a successful brute force attempt into my Wi
 
 We found it very strange that there were five alerts for the successful brute force attempts as you should only need one successful attempt to access the machine: 
 
+<br>
+
+<br>
+
+
+
 ![Incident Timeline](https://github.com/James-Jeudy/Incident-Response/assets/160562010/f143c3b1-6ec2-4bb1-ac8a-836b6b3e27a9)
+
+<br>
 
 The Windows-VM is the machine that was accessed by malicious actors, and 24.46.222.79 is the source IP address of the attacker. According to this info, the attacker is located in Brooklyn, New York:
 
+
+<br>
 ![Entities for incident person place or thing](https://github.com/James-Jeudy/Incident-Response/assets/160562010/091d9f00-8d08-4084-9380-0a77aac0856c)
 
 ![Location of Attacker- further details](https://github.com/James-Jeudy/Incident-Response/assets/160562010/1a24c491-d531-46f3-be28-147ebaeeabb2)

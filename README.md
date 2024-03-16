@@ -147,7 +147,6 @@ After gathering up all of the findings, we closed the ticket as a benign positiv
 
 <br>
 
-<br>
 
 ## Conclusion:
 

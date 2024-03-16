@@ -149,7 +149,10 @@ After gathering up all of the findings, we closed the ticket as a benign positiv
 
 ## Step 5: Conclusion:
 
-In conclusion, this attack was determined as a true positive as a malicious attacker had a successful brute force attempt into our Windows-VM. Due to this being a honeynet environment, no important data was lost as this environment is meant to attract attackers.
+In conclusion, this attack was determined as a true positive, due to a malicious attacker being able to access our Windows-VM. Due to this being a honeynet environment, no important data was lost as this environment is meant to attract threat actors from the internet.
 
+We would resolve the issue in the end by turning off the Windows Virtual Machine, resetting the password of the user account on the machine, & last but definitely most important, hardening the network security group for the Windows-VM and enabling the firewall on the local machine. 
+
+Overall, this was a great project as I was able to gain some experience in using the NIST 800-61 framework to solve incidents, which is a significant part of Security Operations. It has helped me obtain a more well rounded troubleshooting mindset when it comes to security incidents, as the NIST 800-61 framework is generally the centerpiece whenever we need to solve incidents in this field. 
 
 

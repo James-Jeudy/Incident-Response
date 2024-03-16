@@ -5,6 +5,10 @@ In this project, I used the Computer Security Incident Handling Guide(NIST 800-6
 
 ![NIST 800-61 Framework](https://github.com/James-Jeudy/Incident-Response/assets/160562010/63fb401a-8a87-4293-9c9d-d5cbedb5f2f7)
 
+<br>
+
+<br>
+
 
 
 ## Step 1: Preparation:

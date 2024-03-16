@@ -35,6 +35,8 @@ In this project, I used the Computer Security Incident Handling Guide(NIST 800-6
 
 ## 4. Observe Entities and Incident Timelines (are they doing anything else?). Where is the attacker located?
 
+<h3> We found it very strange that there were five alerts for the successful brute force attempts as you should only need one successful attempt to access the machine. 
+
 ![Incident Timeline](https://github.com/James-Jeudy/Incident-Response/assets/160562010/f143c3b1-6ec2-4bb1-ac8a-836b6b3e27a9)
 
 ![Entities for incident person place or thing](https://github.com/James-Jeudy/Incident-Response/assets/160562010/091d9f00-8d08-4084-9380-0a77aac0856c)

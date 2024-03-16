@@ -80,7 +80,16 @@ We found it very strange that there were five alerts for the successful brute fo
 
 <h3>5. “Investigate” the incident and continue trying to determine the scope<h3></h3>
 
+<br>
+
+<br>
+
 ![Investigate the incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/07beacc7-296a-4537-aeeb-6017c27fabdc)
+
+<br>
+
+<br>
+
 
 ![Investigate incident screen](https://github.com/James-Jeudy/Incident-Response/assets/160562010/557d53b1-05c7-4e2c-a2b8-f9f99aadf284)
 

@@ -135,6 +135,9 @@ To fully remediate the issue, we also locked down our Network Security Group for
 
 ![Rules for Windows VM-NSG's](https://github.com/James-Jeudy/Incident-Response/assets/160562010/6209f9f3-d70a-4de0-9238-51ffe9784821)
 
+<br>
+
+<br>
 
 ## Step 4: Document Findings/Info and Clouse out the Incident in Sentinel
 

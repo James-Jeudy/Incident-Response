@@ -15,25 +15,22 @@ We turned off the VM immediately after being notified of the incident to prevent
 ![Immediately stop the VM](https://github.com/James-Jeudy/Incident-Response/assets/160562010/a7b25b6e-a034-4e93-ba05-5f2b4dc6fd3e)
 
 ## Step 2: Detection & Analysis
-
-<h3> 1. Set Severity, Status, & Owner
-
-
+<h3>1. Set Severity, Status, & Owner<h3></h3>
 
 I set the severity to High as it was a successful brute force attempt into my Windows VM. I set the status to active as I was currently working on the ticket and the owner as Myself:
 
 ![Set the owner status   severity for incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/d6a28555-52fc-4fff-a717-8170c46beeac)
 
-<h3> 2. View Full Details
+<h3>2. View Full Details<h3></h3>
 
 ![View full details of the incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/6b74c7a6-6165-4b94-af83-f459d2ff983d)
 
-<h3> 3. Observe the Activity Log (for history of incident):
+ <h3> 3. Observe the Activity Log (for history of incident):<h3></h3>
 
 ![Incident Activity Log](https://github.com/James-Jeudy/Incident-Response/assets/160562010/7b3eae0a-c9d2-4e13-922a-df3b47220eb9)
 
 
-<h3>4. Observe Entities and Incident Timelines
+<h3> 4. Observe Entities and Incident Timelines<h3></h3>
 
 We found it very strange that there were five alerts for the successful brute force attempts as you should only need one successful attempt to access the machine: 
 
@@ -45,13 +42,13 @@ The Windows-VM is the machine that was accessed by malicious actors, and 24.46.2
 
 ![Location of Attacker- further details](https://github.com/James-Jeudy/Incident-Response/assets/160562010/1a24c491-d531-46f3-be28-147ebaeeabb2)
 
-<h3> 5. “Investigate” the incident and continue trying to determine the scope
+<h3>5. “Investigate” the incident and continue trying to determine the scope<h3></h3>
 
 ![Investigate the incident](https://github.com/James-Jeudy/Incident-Response/assets/160562010/07beacc7-296a-4537-aeeb-6017c27fabdc)
 
 ![Investigate incident screen](https://github.com/James-Jeudy/Incident-Response/assets/160562010/557d53b1-05c7-4e2c-a2b8-f9f99aadf284)
 
-<h3> 6. Inspect the entities and see if there are any related events
+<h3>6. Inspect the entities and see if there are any related events<h3>
 
 The IP Address 24.46.222.79 is also involved in five other brute force attempts, 11 brute force successes, 35 privilege escalations, etc. Potentially comprimised system "Windows-VM" is also involved in several other incidents/alerts. We suspect there is possible overexposure to the Public Internet.
 
@@ -63,9 +60,9 @@ The IP Address 24.46.222.79 is also involved in five other brute force attempts,
 
 ![This machine is involved with numerous alerts for obvious reasons](https://github.com/James-Jeudy/Incident-Response/assets/160562010/a0401fdb-1198-478d-bdcd-b77d541cdb61)
 
-<h3> 7. Determine legitimacy of the incident (True Positive, False Positive, etc.)
+<h3>7. Determine legitimacy of the incident (True Positive, False Positive, etc.)<h3></h3>
 
-<h3>
+
 
 As seen below, we ran some queries to determine if this incident is a true positive. The first query gathers failed logins within a one hour time period and some successful logins as well, and whenever someone has failed five or more times but also had a successful login in the same time period, we assume that it was an successful  brute force attempt. 
 

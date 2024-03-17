@@ -152,7 +152,7 @@ After gathering up all of the findings, we closed the ticket as a benign positiv
 
 ## Step 5: Conclusion
 
-In conclusion, this attack was determined to be a benign positive because a malicious attacker was able to access our Windows VM but we expected it, because this was a honeynet environment. Overall, no critical data was lost, as this environment was designed to attract threat actors from the Internet.
+In conclusion, this attack was considered a benign positive because a malicious attacker could access our Windows VM, but we expected it because this was a honeynet environment. Overall, no critical data was lost, as this environment was designed to attract threat actors from the Internet.
 
 We would resolve the issue by turning off the Windows Virtual Machine, resetting the user account's password on the machine, and, last but most importantly, hardening the network security group for the Windows VM and enabling the firewall on the local machine. Hardening the network security groups will help prevent cybercriminals from accessing the Windows VM.  
 

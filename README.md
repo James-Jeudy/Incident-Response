@@ -114,7 +114,7 @@ The potentially compromised system "Windows-VM" is also involved in several othe
 
 We ran some queries below to determine if this incident is a true positive. The first query gathers failed logins within a one-hour time period and some successful logins as well. Whenever someone failed five or more times but also had a successful login in the same period, we assume it was a successful brute-force attempt. 
 
-The second query gathers successful logins (Event ID: 4624) with the Attack IP Address of 24.46.222.79 from James-Jeudy Laptop. Alerts are accurate as they were raised by successful logins from this workstation using the lab-user username. Lab-User is the local username of our Windows VM machine. We determined that this is a true positive, and we are lucky as no damage occurred with the malicious actor logging into the machine as this is a honeynet environment designed to attract attackers:
+The second query gathers successful logins (Event ID: 4624) with the Attack IP Address of 24.46.222.79 from James-Jeudy Laptop. Alerts are accurate as they were raised by successful logins from this workstation using the lab-user username. Lab-User is the local username of our Windows VM machine. We determined that this is a benign positive, and we are lucky as no damage occurred with the malicious actor logging into the machine as this is a honeynet environment designed to attract attackers:
 
 ![Query in log analytics workspace](https://github.com/James-Jeudy/Incident-Response/assets/160562010/a7bdd65a-e4cc-40ad-8a9f-9f3f3343602f)
 
@@ -152,7 +152,7 @@ After gathering up all of the findings, we closed the ticket as a benign positiv
 
 ## Step 5: Conclusion
 
-In conclusion, this attack was determined to be a true positive because a malicious attacker was able to access our Windows VM. Because this was a honeynet environment, no important data was lost, as this environment is meant to attract threat actors from the Internet.
+In conclusion, this attack was determined to be a benign positive because a malicious attacker was able to access our Windows VM but we expected it, because this was a honeynet environment. Overall, no critical data was lost, as this environment was designed to attract threat actors from the Internet.
 
 We would resolve the issue by turning off the Windows Virtual Machine, resetting the user account's password on the machine, and, last but most importantly, hardening the network security group for the Windows VM and enabling the firewall on the local machine. Hardening the network security groups will help prevent cybercriminals from accessing the Windows VM.  
 

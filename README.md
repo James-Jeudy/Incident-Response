@@ -1,4 +1,4 @@
-# Incident Response
+# Solving an Incident utilizing NIST 800-61
 
 ## Introduction
 In this project, I used the Computer Security Incident Handling Guide(NIST 800-61) in my SOC/Honeynet environment to solve an incident involving a successful brute force attempt into my Windows Virtual Machine in Microsoft Azure. The environment used in this project is related to my other project: [Creating a Live SOC/Honeynet in Azure ](https://github.com/James-Jeudy/SOC-Honeynet-Azure).
